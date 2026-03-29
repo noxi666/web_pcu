@@ -2,81 +2,84 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>게임 제보 및 문의 사이트</title>
 </head>
 <body>
-    <header>
-        <h1>고객 문의 센터</h1>
-        <p>게임 이용 중 발생한 문제나 문의 사항을 접수하는 페이지입니다.</p>
-    </header>
 
-    <main>
-        <section>
-            <h2>문의 작성</h2>
+    <div align="center">
+        <table width="500" border="0">
+            <tr>
+                <td>
 
-            <form action="#" method="post">
-                <p>
-                    <label for="nickname">유저님의 닉네임을 적어주세요!</label><br>
-                    <input type="text" id="nickname" name="nickname" placeholder="예) 잘생긴총잡이">
-                </p>
+                    <header>
+                        <h1 align="center">고객 문의 센터</h1>
+                        <p align="center">문제 발생 시 아래 양식을 작성해주세요</p>
+                    </header>
 
-                <hr>
+                    <main>
+                        <section>
+                            <form>
 
-                <p>
-                    <label for="buglist">현재 발생한 문제를 알려주세요!</label><br>
-                    <select id="buglist" name="buglist">
-                        <option value="1">게임 내 부정행위 유저 신고</option>
-                        <option value="2">결제 및 환불</option>
-                        <option value="3">버그 제보</option>
-                    </select>
-                </p>
+                                <p>
+                                    <label>닉네임 입력</label><br>
+                                    <input type="text" placeholder="예) 잘생긴총잡이">
+                                </p>
 
-                <hr>
+                                <hr>
 
-                <p>
-                    <label for="server">유저분의 서버를 골라주세요!</label><br>
-                    <select id="server" name="server">
-                        <option value="4">South Korea</option>
-                        <option value="5">Canada</option>
-                        <option value="6">Japan</option>
-                    </select>
-                </p>
+                                <p>
+                                    <label>문제 유형 선택</label><br>
+                                    <select>
+                                        <option>게임 내 부정행위 유저 신고</option>
+                                        <option>결제 및 환불</option>
+                                        <option>버그 제보</option>
+                                    </select>
+                                </p>
 
-                <hr>
+                                <hr>
 
-                <p>
-                    <label for="description">유저분께서 겪고 계신 문제점에 대해 설명해주세요!</label><br>
-                    <textarea id="description" name="description" cols="50" rows="10"></textarea>
-                </p>
+                                <p>
+                                    <label>서버 선택</label><br>
+                                    <select>
+                                        <option>South Korea</option>
+                                        <option>Canada</option>
+                                        <option>Japan</option>
+                                    </select>
+                                </p>
 
-                <hr>
+                                <hr>
 
-                <fieldset>
-                    <legend>고객 문의 센터의 만족도를 알려주세요!</legend>
+                                <p>
+                                    <label>문제 설명</label><br>
+                                    <textarea cols="50" rows="10"></textarea>
+                                </p>
 
-                    <input type="radio" id="very_bad" name="satisfaction" value="7">
-                    <label for="very_bad">매우 불만족</label>
+                                <hr>
 
-                    <input type="radio" id="bad" name="satisfaction" value="8">
-                    <label for="bad">불만족</label>
+                                <fieldset>
+                                    <legend>만족도</legend>
 
-                    <input type="radio" id="normal" name="satisfaction" value="9" checked>
-                    <label for="normal">보통</label>
+                                    <input type="radio" name="rate"> 매우 불만족<br>
+                                    <input type="radio" name="rate"> 불만족<br>
+                                    <input type="radio" name="rate" checked> 보통<br>
+                                    <input type="radio" name="rate"> 만족<br>
+                                    <input type="radio" name="rate"> 매우 만족<br>
+                                </fieldset>
 
-                    <input type="radio" id="good" name="satisfaction" value="10">
-                    <label for="good">만족</label>
+                                <hr>
 
-                    <input type="radio" id="very_good" name="satisfaction" value="11">
-                    <label for="very_good">매우 만족</label>
-                </fieldset>
+                                <p align="center">
+                                    <input type="submit" value="제출">
+                                </p>
 
-                <hr>
+                            </form>
+                        </section>
+                    </main>
 
-                <button type="submit">제출</button>
-            </form>
-        </section>
-    </main>
+                </td>
+            </tr>
+        </table>
+    </div>
 
 </body>
 </html>
